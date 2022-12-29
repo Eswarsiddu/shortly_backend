@@ -5,9 +5,8 @@ const app: Express = express();
 config();
 import { dbConfig } from "./dbConfig";
 app.use(express.static("public"));
+app.get("/:backHalf", sendHtmlFile("backHalf.html"));
 app.get("/", sendHtmlFile("home.html"));
-app.get("/login", sendHtmlFile("login.html"));
-app.get("/signup", sendHtmlFile("signup.html"));
 
 const port = process.env.PORT || 8000;
 

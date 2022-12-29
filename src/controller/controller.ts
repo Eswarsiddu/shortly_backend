@@ -1,3 +1,8 @@
 import { Request, Response } from "express";
 
-export {};
+function backHalfController(req: Request, res: Response) {
+  const { backHalf } = req.params;
+  res.send(backHalf);
+}
+
+export { backHalfController };

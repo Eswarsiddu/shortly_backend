@@ -1,4 +1,5 @@
-import { Schema, model } from "mongoose";
+// import { Schema, model } from "mongoose";
+const { Schema, model } = require("mongoose");
 
 const urlSchema = new Schema({
   uid: {
@@ -34,4 +35,6 @@ const urlSchema = new Schema({
   },
 });
 
-export const urlModel = model("urls", urlSchema);
+const urlModel = model("urls", urlSchema);
+
+module.exports = urlModel;

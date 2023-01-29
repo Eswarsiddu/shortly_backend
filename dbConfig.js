@@ -1,4 +1,4 @@
-import { connect, set } from "mongoose";
+const { connect, set } = require("mongoose");
 set("strictQuery", true);
 async function dbConfig() {
   try {
@@ -12,4 +12,4 @@ async function dbConfig() {
   }
 }
 
-export { dbConfig };
+module.exports = { dbConfig };

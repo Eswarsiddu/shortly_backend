@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <title>Shortly</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+      * {
+        margin: 0;
+      }
+      body {
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        background-color: #ecf0f3;
+        color: black;
+      }
+      nav {
+        margin: 0 3rem 0.5rem;
+        text-align: center;
+        height: 4rem;
+      }
+
+      nav a {
+        font-family: "Pacifico", cursive;
+        user-select: none;
+        background-image: linear-gradient(to right, #392fa4, #c21ee7);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        text-decoration: none;
+        font-size: xx-large;
+        margin: auto 0px;
+      }
+
+      nav a:hover {
+        cursor: pointer;
+      }
+
+      img {
+        aspect-ratio: 16 / 9;
+        width: 10rem;
+      }
+
+      h1 {
+        font-size: 4rem;
+        font-weight: 400;
+      }
+
+      p {
+        text-align: center;
+        margin: 0.5rem;
+      }
+
+      .oh-no {
+        font-size: x-large;
+      }
+
+      main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      @media (min-width: 640px) {
+        nav {
+          text-align: left;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav><a href="/">Shortly</a></nav>
+    <main>
+      <img src="sad_cloud.png" alt="sad cloud" />
+      <h1>404</h1>
+      <p class="oh-no">Oh no!</p>
+      <p>
+        You're either misspelling the URL <br />or requesting a page that's no
+        longer here
+      </p>
+    </main>
+  </body>
+</html>

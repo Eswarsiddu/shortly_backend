@@ -12,6 +12,7 @@ app.use(
       "http://192.168.29.68:5173",
       "http://192.168.29.98:5173",
       "https://eswarsiddu.github.io",
+      "https://shortly-7b21f.web.app",
     ],
     methods: ["POST", "GET"],
   })
